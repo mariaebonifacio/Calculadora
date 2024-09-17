@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
             pictureBox1 = new PictureBox();
             progressBar1 = new ProgressBar();
             label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -62,6 +64,12 @@
             label1.TabIndex = 2;
             label1.Text = "Carregando...";
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -76,6 +84,7 @@
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora";
+            Load += Calculadora_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -86,5 +95,6 @@
         private PictureBox pictureBox1;
         private ProgressBar progressBar1;
         private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
