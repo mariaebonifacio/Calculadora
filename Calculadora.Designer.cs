@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
             pictureBox1 = new PictureBox();
             progressBar1 = new ProgressBar();
-            timer1 = new System.Windows.Forms.Timer(components);
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,21 +47,16 @@
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(61, 339);
+            progressBar1.Location = new Point(12, 394);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(680, 52);
+            progressBar1.Size = new Size(776, 44);
             progressBar1.TabIndex = 1;
-            // 
-            // timer1
-            // 
-            timer1.Enabled = true;
-            timer1.Interval = 1000;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sylfaen", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(314, 289);
+            label1.Location = new Point(314, 274);
             label1.Name = "label1";
             label1.Size = new Size(184, 36);
             label1.TabIndex = 2;
@@ -78,8 +71,10 @@
             Controls.Add(label1);
             Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Calculadora";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -90,7 +85,6 @@
 
         private PictureBox pictureBox1;
         private ProgressBar progressBar1;
-        private System.Windows.Forms.Timer timer1;
         private Label label1;
     }
 }
