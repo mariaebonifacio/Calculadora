@@ -49,8 +49,6 @@
             button24 = new Button();
             button10 = new Button();
             textBox1 = new TextBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -302,16 +300,6 @@
             textBox1.Size = new Size(250, 48);
             textBox1.TabIndex = 27;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Calculadora.Properties.Resources.stitch;
-            pictureBox1.Location = new Point(233, 344);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(94, 86);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 28;
-            pictureBox1.TabStop = false;
-            // 
             // Jogo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -338,13 +326,11 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "Jogo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Jogo";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -371,6 +357,5 @@
         private Button button24;
         private Button button10;
         private TextBox textBox1;
-        private PictureBox pictureBox1;
     }
 }
