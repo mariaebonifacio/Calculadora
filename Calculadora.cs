@@ -17,7 +17,11 @@ namespace Calculadora
                 formularioJogo.ShowDialog();
             }
 
-            progressBar1.Value = progressBar1.Value + 20;
+            else 
+            {
+                progressBar1.Value = progressBar1.Value + 20;
+            }
+            
         }
 
     }
