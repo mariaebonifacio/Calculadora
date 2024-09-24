@@ -40,27 +40,29 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(314, 87);
+            pictureBox1.Location = new Point(275, 65);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(184, 175);
+            pictureBox1.Size = new Size(161, 131);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(12, 394);
+            progressBar1.Location = new Point(10, 296);
+            progressBar1.Margin = new Padding(3, 2, 3, 2);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(776, 44);
+            progressBar1.Size = new Size(679, 33);
             progressBar1.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sylfaen", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(314, 274);
+            label1.Location = new Point(275, 206);
             label1.Name = "label1";
-            label1.Size = new Size(184, 36);
+            label1.Size = new Size(147, 28);
             label1.TabIndex = 2;
             label1.Text = "Carregando...";
             // 
@@ -72,19 +74,19 @@
             // 
             // Calculadora
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(label1);
             Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora";
-            Load += Calculadora_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
