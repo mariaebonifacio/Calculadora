@@ -17,15 +17,6 @@ namespace Calculadora
             InitializeComponent();
         }
 
-        private void Jogo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button23_Click(object sender, EventArgs e)
         {

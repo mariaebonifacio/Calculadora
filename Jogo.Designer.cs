@@ -49,6 +49,8 @@
             button24 = new Button();
             button10 = new Button();
             textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -56,7 +58,7 @@
             button1.BackColor = SystemColors.Desktop;
             button1.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(39, 249);
+            button1.Location = new Point(42, 240);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(49, 41);
@@ -69,7 +71,7 @@
             button2.BackColor = SystemColors.Desktop;
             button2.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(94, 249);
+            button2.Location = new Point(108, 240);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(49, 41);
@@ -82,7 +84,7 @@
             button3.BackColor = SystemColors.Desktop;
             button3.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(148, 249);
+            button3.Location = new Point(176, 240);
             button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
             button3.Size = new Size(49, 41);
@@ -95,7 +97,7 @@
             button4.BackColor = SystemColors.Desktop;
             button4.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button4.ForeColor = SystemColors.ControlLightLight;
-            button4.Location = new Point(39, 204);
+            button4.Location = new Point(42, 195);
             button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
             button4.Size = new Size(49, 41);
@@ -108,7 +110,7 @@
             button5.BackColor = SystemColors.Desktop;
             button5.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(94, 204);
+            button5.Location = new Point(108, 195);
             button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
             button5.Size = new Size(49, 41);
@@ -121,7 +123,7 @@
             button6.BackColor = SystemColors.Desktop;
             button6.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button6.ForeColor = SystemColors.ControlLightLight;
-            button6.Location = new Point(148, 204);
+            button6.Location = new Point(176, 195);
             button6.Margin = new Padding(3, 2, 3, 2);
             button6.Name = "button6";
             button6.Size = new Size(49, 41);
@@ -134,7 +136,7 @@
             button7.BackColor = SystemColors.Desktop;
             button7.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Location = new Point(39, 158);
+            button7.Location = new Point(42, 149);
             button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
             button7.Size = new Size(49, 41);
@@ -147,7 +149,7 @@
             button8.BackColor = SystemColors.Desktop;
             button8.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button8.ForeColor = SystemColors.ControlLightLight;
-            button8.Location = new Point(94, 158);
+            button8.Location = new Point(107, 149);
             button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
             button8.Size = new Size(49, 41);
@@ -160,7 +162,7 @@
             button9.BackColor = SystemColors.Desktop;
             button9.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button9.ForeColor = SystemColors.ControlLightLight;
-            button9.Location = new Point(148, 158);
+            button9.Location = new Point(176, 150);
             button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
             button9.Size = new Size(49, 41);
@@ -172,7 +174,7 @@
             // 
             button11.BackColor = Color.PaleVioletRed;
             button11.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button11.Location = new Point(94, 295);
+            button11.Location = new Point(108, 286);
             button11.Margin = new Padding(3, 2, 3, 2);
             button11.Name = "button11";
             button11.Size = new Size(49, 41);
@@ -184,7 +186,7 @@
             // 
             button12.BackColor = Color.PaleVioletRed;
             button12.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button12.Location = new Point(148, 295);
+            button12.Location = new Point(176, 286);
             button12.Margin = new Padding(3, 2, 3, 2);
             button12.Name = "button12";
             button12.Size = new Size(49, 41);
@@ -197,7 +199,7 @@
             button13.BackColor = Color.MediumVioletRed;
             button13.Font = new Font("Arial Narrow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button13.ForeColor = SystemColors.ControlLightLight;
-            button13.Location = new Point(202, 249);
+            button13.Location = new Point(243, 241);
             button13.Margin = new Padding(3, 2, 3, 2);
             button13.Name = "button13";
             button13.Size = new Size(49, 87);
@@ -209,7 +211,7 @@
             // 
             button14.BackColor = Color.PaleVioletRed;
             button14.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button14.Location = new Point(202, 204);
+            button14.Location = new Point(243, 194);
             button14.Margin = new Padding(3, 2, 3, 2);
             button14.Name = "button14";
             button14.Size = new Size(49, 41);
@@ -221,7 +223,7 @@
             // 
             button15.BackColor = Color.PaleVioletRed;
             button15.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button15.Location = new Point(202, 158);
+            button15.Location = new Point(243, 149);
             button15.Margin = new Padding(3, 2, 3, 2);
             button15.Name = "button15";
             button15.Size = new Size(49, 41);
@@ -233,20 +235,19 @@
             // 
             button16.BackColor = Color.DeepPink;
             button16.Font = new Font("Arial", 10.8F, FontStyle.Bold);
-            button16.Location = new Point(201, 113);
+            button16.Location = new Point(243, 104);
             button16.Margin = new Padding(3, 2, 3, 2);
             button16.Name = "button16";
             button16.Size = new Size(49, 41);
             button16.TabIndex = 15;
             button16.Text = "⌫";
             button16.UseVisualStyleBackColor = false;
-            button16.Click += button16_Click;
             // 
             // button19
             // 
             button19.BackColor = Color.PaleVioletRed;
             button19.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button19.Location = new Point(148, 113);
+            button19.Location = new Point(176, 104);
             button19.Margin = new Padding(3, 2, 3, 2);
             button19.Name = "button19";
             button19.Size = new Size(49, 41);
@@ -258,7 +259,7 @@
             // 
             button23.BackColor = Color.DeepPink;
             button23.Font = new Font("Arial", 10.8F, FontStyle.Bold);
-            button23.Location = new Point(39, 113);
+            button23.Location = new Point(42, 104);
             button23.Margin = new Padding(3, 2, 3, 2);
             button23.Name = "button23";
             button23.Size = new Size(49, 41);
@@ -272,7 +273,7 @@
             button24.BackColor = SystemColors.Desktop;
             button24.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             button24.ForeColor = SystemColors.ControlLightLight;
-            button24.Location = new Point(39, 293);
+            button24.Location = new Point(42, 285);
             button24.Margin = new Padding(3, 2, 3, 2);
             button24.Name = "button24";
             button24.Size = new Size(49, 44);
@@ -284,7 +285,7 @@
             // 
             button10.BackColor = Color.DeepPink;
             button10.Font = new Font("Arial", 10.8F, FontStyle.Bold);
-            button10.Location = new Point(94, 113);
+            button10.Location = new Point(108, 104);
             button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
             button10.Size = new Size(49, 41);
@@ -294,19 +295,29 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(38, 57);
+            textBox1.Location = new Point(42, 52);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(212, 48);
+            textBox1.Size = new Size(250, 48);
             textBox1.TabIndex = 27;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Calculadora.Properties.Resources.stitch;
+            pictureBox1.Location = new Point(233, 344);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(94, 86);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 28;
+            pictureBox1.TabStop = false;
             // 
             // Jogo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightPink;
-            ClientSize = new Size(292, 386);
+            ClientSize = new Size(327, 427);
             Controls.Add(textBox1);
             Controls.Add(button10);
             Controls.Add(button24);
@@ -327,12 +338,13 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "Jogo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Jogo";
-            Load += Jogo_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -359,5 +371,6 @@
         private Button button24;
         private Button button10;
         private TextBox textBox1;
+        private PictureBox pictureBox1;
     }
 }
