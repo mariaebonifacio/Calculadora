@@ -73,6 +73,26 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lilo_Stitch_PNG_62 {
+            get {
+                object obj = ResourceManager.GetObject("Lilo-Stitch-PNG-62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lilo_stitch_ross {
+            get {
+                object obj = ResourceManager.GetObject("lilo-stitch-ross", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stitch {
             get {
                 object obj = ResourceManager.GetObject("stitch", resourceCulture);

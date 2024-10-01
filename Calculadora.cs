@@ -17,11 +17,15 @@ namespace Calculadora
             if (progressBar1.Value == 100)
             {
                 timer1.Enabled = false;
+                this.Hide();
                 Jogo formularioJogo = new Jogo();
-                formularioJogo.ShowDialog();
+                formularioJogo.Show();
             }
-
-            progressBar1.Value = progressBar1.Value + 20;
+            else
+            {
+                progressBar1.Value = progressBar1.Value + 20;
+            }
         }
+
     }
 }

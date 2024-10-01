@@ -38,17 +38,21 @@
             nmr7 = new Button();
             nmr8 = new Button();
             nmr9 = new Button();
-            button12 = new Button();
+            buttonIgual = new Button();
             buttonDeMais = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button19 = new Button();
-            button23 = new Button();
+            buttonMenos = new Button();
+            buttonMultiplicacao = new Button();
+            buttonDivisao = new Button();
+            buttonOff = new Button();
             nmr0 = new Button();
-            button10 = new Button();
+            buttonLimpar = new Button();
             Visor = new TextBox();
-            button11 = new Button();
-            button1 = new Button();
+            menuStrip1 = new MenuStrip();
+            arquivoToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            conversorToolStripMenuItem = new ToolStripMenuItem();
+            celsiusParaFahrenheitToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // nmr1
@@ -56,7 +60,7 @@
             nmr1.BackColor = SystemColors.Desktop;
             nmr1.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr1.ForeColor = SystemColors.ControlLightLight;
-            nmr1.Location = new Point(35, 216);
+            nmr1.Location = new Point(22, 252);
             nmr1.Margin = new Padding(3, 2, 3, 2);
             nmr1.Name = "nmr1";
             nmr1.Size = new Size(63, 41);
@@ -70,7 +74,7 @@
             nmr2.BackColor = SystemColors.Desktop;
             nmr2.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr2.ForeColor = SystemColors.ControlLightLight;
-            nmr2.Location = new Point(104, 218);
+            nmr2.Location = new Point(91, 254);
             nmr2.Margin = new Padding(3, 2, 3, 2);
             nmr2.Name = "nmr2";
             nmr2.Size = new Size(63, 41);
@@ -84,7 +88,7 @@
             nmr3.BackColor = SystemColors.Desktop;
             nmr3.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr3.ForeColor = SystemColors.ControlLightLight;
-            nmr3.Location = new Point(173, 218);
+            nmr3.Location = new Point(160, 254);
             nmr3.Margin = new Padding(3, 2, 3, 2);
             nmr3.Name = "nmr3";
             nmr3.Size = new Size(63, 41);
@@ -98,7 +102,7 @@
             nmr4.BackColor = SystemColors.Desktop;
             nmr4.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr4.ForeColor = SystemColors.ControlLightLight;
-            nmr4.Location = new Point(35, 171);
+            nmr4.Location = new Point(22, 207);
             nmr4.Margin = new Padding(3, 2, 3, 2);
             nmr4.Name = "nmr4";
             nmr4.Size = new Size(63, 41);
@@ -112,7 +116,7 @@
             nmr5.BackColor = SystemColors.Desktop;
             nmr5.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr5.ForeColor = SystemColors.ControlLightLight;
-            nmr5.Location = new Point(104, 173);
+            nmr5.Location = new Point(91, 209);
             nmr5.Margin = new Padding(3, 2, 3, 2);
             nmr5.Name = "nmr5";
             nmr5.Size = new Size(63, 41);
@@ -126,7 +130,7 @@
             nmr6.BackColor = SystemColors.Desktop;
             nmr6.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr6.ForeColor = SystemColors.ControlLightLight;
-            nmr6.Location = new Point(173, 173);
+            nmr6.Location = new Point(160, 209);
             nmr6.Margin = new Padding(3, 2, 3, 2);
             nmr6.Name = "nmr6";
             nmr6.Size = new Size(63, 41);
@@ -140,7 +144,7 @@
             nmr7.BackColor = SystemColors.Desktop;
             nmr7.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr7.ForeColor = SystemColors.ControlLightLight;
-            nmr7.Location = new Point(35, 125);
+            nmr7.Location = new Point(22, 161);
             nmr7.Margin = new Padding(3, 2, 3, 2);
             nmr7.Name = "nmr7";
             nmr7.Size = new Size(63, 41);
@@ -154,7 +158,7 @@
             nmr8.BackColor = SystemColors.Desktop;
             nmr8.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr8.ForeColor = SystemColors.ControlLightLight;
-            nmr8.Location = new Point(104, 127);
+            nmr8.Location = new Point(91, 163);
             nmr8.Margin = new Padding(3, 2, 3, 2);
             nmr8.Name = "nmr8";
             nmr8.Size = new Size(63, 41);
@@ -168,7 +172,7 @@
             nmr9.BackColor = SystemColors.Desktop;
             nmr9.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr9.ForeColor = SystemColors.ControlLightLight;
-            nmr9.Location = new Point(173, 127);
+            nmr9.Location = new Point(160, 163);
             nmr9.Margin = new Padding(3, 2, 3, 2);
             nmr9.Name = "nmr9";
             nmr9.Size = new Size(63, 41);
@@ -177,156 +181,173 @@
             nmr9.UseVisualStyleBackColor = false;
             nmr9.Click += nmr9_Click;
             // 
-            // button12
+            // buttonIgual
             // 
-            button12.BackColor = Color.PaleVioletRed;
-            button12.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button12.Location = new Point(173, 264);
-            button12.Margin = new Padding(3, 2, 3, 2);
-            button12.Name = "button12";
-            button12.Size = new Size(63, 41);
-            button12.TabIndex = 11;
-            button12.Text = "=";
-            button12.UseVisualStyleBackColor = false;
+            buttonIgual.BackColor = Color.PaleVioletRed;
+            buttonIgual.Font = new Font("Arial", 13.8F, FontStyle.Bold);
+            buttonIgual.Location = new Point(160, 300);
+            buttonIgual.Margin = new Padding(3, 2, 3, 2);
+            buttonIgual.Name = "buttonIgual";
+            buttonIgual.Size = new Size(63, 41);
+            buttonIgual.TabIndex = 11;
+            buttonIgual.Text = "=";
+            buttonIgual.UseVisualStyleBackColor = false;
+            buttonIgual.Click += buttonIgual_Click;
             // 
             // buttonDeMais
             // 
             buttonDeMais.BackColor = Color.MediumVioletRed;
             buttonDeMais.Font = new Font("Arial Narrow", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonDeMais.ForeColor = SystemColors.ControlLightLight;
-            buttonDeMais.Location = new Point(242, 219);
+            buttonDeMais.Location = new Point(229, 210);
             buttonDeMais.Margin = new Padding(3, 2, 3, 2);
             buttonDeMais.Name = "buttonDeMais";
-            buttonDeMais.Size = new Size(63, 87);
+            buttonDeMais.Size = new Size(63, 132);
             buttonDeMais.TabIndex = 12;
             buttonDeMais.Text = "+";
             buttonDeMais.UseVisualStyleBackColor = false;
             buttonDeMais.Click += buttonDeMais_Click;
             // 
-            // button14
+            // buttonMenos
             // 
-            button14.BackColor = Color.PaleVioletRed;
-            button14.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button14.Location = new Point(242, 174);
-            button14.Margin = new Padding(3, 2, 3, 2);
-            button14.Name = "button14";
-            button14.Size = new Size(63, 41);
-            button14.TabIndex = 13;
-            button14.Text = "-";
-            button14.UseVisualStyleBackColor = false;
+            buttonMenos.BackColor = Color.PaleVioletRed;
+            buttonMenos.Font = new Font("Arial", 13.8F, FontStyle.Bold);
+            buttonMenos.Location = new Point(229, 118);
+            buttonMenos.Margin = new Padding(3, 2, 3, 2);
+            buttonMenos.Name = "buttonMenos";
+            buttonMenos.Size = new Size(63, 41);
+            buttonMenos.TabIndex = 13;
+            buttonMenos.Text = "-";
+            buttonMenos.UseVisualStyleBackColor = false;
+            buttonMenos.Click += buttonMenos_Click;
             // 
-            // button15
+            // buttonMultiplicacao
             // 
-            button15.BackColor = Color.PaleVioletRed;
-            button15.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button15.Location = new Point(242, 125);
-            button15.Margin = new Padding(3, 2, 3, 2);
-            button15.Name = "button15";
-            button15.Size = new Size(63, 41);
-            button15.TabIndex = 14;
-            button15.Text = "x";
-            button15.UseVisualStyleBackColor = false;
+            buttonMultiplicacao.BackColor = Color.PaleVioletRed;
+            buttonMultiplicacao.Font = new Font("Arial", 13.8F, FontStyle.Bold);
+            buttonMultiplicacao.Location = new Point(160, 118);
+            buttonMultiplicacao.Margin = new Padding(3, 2, 3, 2);
+            buttonMultiplicacao.Name = "buttonMultiplicacao";
+            buttonMultiplicacao.Size = new Size(63, 41);
+            buttonMultiplicacao.TabIndex = 14;
+            buttonMultiplicacao.Text = "*";
+            buttonMultiplicacao.UseVisualStyleBackColor = false;
+            buttonMultiplicacao.Click += buttonMultiplicacao_Click;
             // 
-            // button19
+            // buttonDivisao
             // 
-            button19.BackColor = Color.PaleVioletRed;
-            button19.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button19.Location = new Point(173, 82);
-            button19.Margin = new Padding(3, 2, 3, 2);
-            button19.Name = "button19";
-            button19.Size = new Size(63, 41);
-            button19.TabIndex = 18;
-            button19.Text = "÷";
-            button19.UseVisualStyleBackColor = false;
+            buttonDivisao.BackColor = Color.PaleVioletRed;
+            buttonDivisao.Font = new Font("Arial", 13.8F, FontStyle.Bold);
+            buttonDivisao.Location = new Point(91, 117);
+            buttonDivisao.Margin = new Padding(3, 2, 3, 2);
+            buttonDivisao.Name = "buttonDivisao";
+            buttonDivisao.Size = new Size(63, 41);
+            buttonDivisao.TabIndex = 18;
+            buttonDivisao.Text = "/";
+            buttonDivisao.UseVisualStyleBackColor = false;
+            buttonDivisao.Click += buttonDivisao_Click;
             // 
-            // button23
+            // buttonOff
             // 
-            button23.BackColor = Color.DeepPink;
-            button23.Font = new Font("Arial", 10.8F, FontStyle.Bold);
-            button23.Location = new Point(35, 81);
-            button23.Margin = new Padding(3, 2, 3, 2);
-            button23.Name = "button23";
-            button23.Size = new Size(63, 41);
-            button23.TabIndex = 19;
-            button23.Text = "OFF";
-            button23.UseVisualStyleBackColor = false;
+            buttonOff.BackColor = Color.DeepPink;
+            buttonOff.Font = new Font("Arial", 10.8F, FontStyle.Bold);
+            buttonOff.Location = new Point(22, 117);
+            buttonOff.Margin = new Padding(3, 2, 3, 2);
+            buttonOff.Name = "buttonOff";
+            buttonOff.Size = new Size(63, 41);
+            buttonOff.TabIndex = 19;
+            buttonOff.Text = "OFF";
+            buttonOff.UseVisualStyleBackColor = false;
+            buttonOff.Click += buttonOff_Click;
             // 
             // nmr0
             // 
             nmr0.BackColor = SystemColors.Desktop;
             nmr0.Font = new Font("Arial", 13.8F, FontStyle.Bold);
             nmr0.ForeColor = SystemColors.ControlLightLight;
-            nmr0.Location = new Point(35, 260);
+            nmr0.Location = new Point(22, 296);
             nmr0.Margin = new Padding(3, 2, 3, 2);
             nmr0.Name = "nmr0";
-            nmr0.Size = new Size(63, 44);
+            nmr0.Size = new Size(132, 44);
             nmr0.TabIndex = 23;
             nmr0.Text = "0";
             nmr0.UseVisualStyleBackColor = false;
             nmr0.Click += nmr0_Click;
             // 
-            // button10
+            // buttonLimpar
             // 
-            button10.BackColor = Color.DeepPink;
-            button10.Font = new Font("Arial", 10.8F, FontStyle.Bold);
-            button10.Location = new Point(104, 81);
-            button10.Margin = new Padding(3, 2, 3, 2);
-            button10.Name = "button10";
-            button10.Size = new Size(63, 41);
-            button10.TabIndex = 24;
-            button10.Text = "CE";
-            button10.UseVisualStyleBackColor = false;
+            buttonLimpar.BackColor = Color.DeepPink;
+            buttonLimpar.Font = new Font("Britannic Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            buttonLimpar.Location = new Point(229, 165);
+            buttonLimpar.Margin = new Padding(3, 2, 3, 2);
+            buttonLimpar.Name = "buttonLimpar";
+            buttonLimpar.Size = new Size(63, 41);
+            buttonLimpar.TabIndex = 24;
+            buttonLimpar.Text = "CLS";
+            buttonLimpar.UseVisualStyleBackColor = false;
+            buttonLimpar.Click += buttonLimpar_Click;
             // 
             // Visor
             // 
-            Visor.Location = new Point(35, 37);
+            Visor.Location = new Point(22, 73);
             Visor.Margin = new Padding(3, 2, 3, 2);
             Visor.Multiline = true;
             Visor.Name = "Visor";
             Visor.Size = new Size(270, 40);
             Visor.TabIndex = 27;
             // 
-            // button11
+            // menuStrip1
             // 
-            button11.BackColor = Color.PaleVioletRed;
-            button11.Font = new Font("Arial", 13.8F, FontStyle.Bold);
-            button11.Location = new Point(104, 264);
-            button11.Margin = new Padding(3, 2, 3, 2);
-            button11.Name = "button11";
-            button11.Size = new Size(63, 41);
-            button11.TabIndex = 10;
-            button11.Text = ".";
-            button11.UseVisualStyleBackColor = false;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { arquivoToolStripMenuItem, conversorToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(312, 24);
+            menuStrip1.TabIndex = 30;
+            menuStrip1.Text = "menuStrip1";
             // 
-            // button1
+            // arquivoToolStripMenuItem
             // 
-            button1.BackColor = Color.DeepPink;
-            button1.Font = new Font("Arial", 10.8F, FontStyle.Bold);
-            button1.Location = new Point(242, 80);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(63, 41);
-            button1.TabIndex = 28;
-            button1.Text = "⌫";
-            button1.UseVisualStyleBackColor = false;
+            arquivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sairToolStripMenuItem });
+            arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            arquivoToolStripMenuItem.Size = new Size(61, 20);
+            arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(180, 22);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            // 
+            // conversorToolStripMenuItem
+            // 
+            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { celsiusParaFahrenheitToolStripMenuItem });
+            conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
+            conversorToolStripMenuItem.Size = new Size(73, 20);
+            conversorToolStripMenuItem.Text = "Conversor";
+            // 
+            // celsiusParaFahrenheitToolStripMenuItem
+            // 
+            celsiusParaFahrenheitToolStripMenuItem.Name = "celsiusParaFahrenheitToolStripMenuItem";
+            celsiusParaFahrenheitToolStripMenuItem.Size = new Size(196, 22);
+            celsiusParaFahrenheitToolStripMenuItem.Text = "Celsius para Fahrenheit";
+            celsiusParaFahrenheitToolStripMenuItem.Click += celsiusParaFahrenheitToolStripMenuItem_Click;
             // 
             // Jogo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightPink;
-            ClientSize = new Size(342, 392);
-            Controls.Add(button1);
+            ClientSize = new Size(312, 369);
             Controls.Add(Visor);
-            Controls.Add(button10);
+            Controls.Add(buttonLimpar);
             Controls.Add(nmr0);
-            Controls.Add(button23);
-            Controls.Add(button19);
-            Controls.Add(button15);
-            Controls.Add(button14);
+            Controls.Add(buttonOff);
+            Controls.Add(buttonDivisao);
+            Controls.Add(buttonMultiplicacao);
+            Controls.Add(buttonMenos);
             Controls.Add(buttonDeMais);
-            Controls.Add(button12);
-            Controls.Add(button11);
+            Controls.Add(buttonIgual);
             Controls.Add(nmr9);
             Controls.Add(nmr8);
             Controls.Add(nmr7);
@@ -336,11 +357,16 @@
             Controls.Add(nmr3);
             Controls.Add(nmr2);
             Controls.Add(nmr1);
+            Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Jogo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Jogo";
+            FormClosed += Jogo_FormClosed;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -356,16 +382,19 @@
         private Button nmr7;
         private Button nmr8;
         private Button nmr9;
-        private Button button12;
+        private Button buttonIgual;
         private Button buttonDeMais;
-        private Button button14;
-        private Button button15;
-        private Button button19;
-        private Button button23;
+        private Button buttonMenos;
+        private Button buttonMultiplicacao;
+        private Button buttonDivisao;
+        private Button buttonOff;
         private Button nmr0;
-        private Button button10;
+        private Button buttonLimpar;
         private TextBox Visor;
-        private Button button11;
-        private Button button1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem arquivoToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem conversorToolStripMenuItem;
+        private ToolStripMenuItem celsiusParaFahrenheitToolStripMenuItem;
     }
 }

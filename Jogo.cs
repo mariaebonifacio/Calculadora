@@ -72,7 +72,85 @@ namespace Calculadora
 
         private void buttonDeMais_Click(object sender, EventArgs e)
         {
+            valor1 = Convert.ToSingle(Visor.Text);
+            operacao = "adicao";
+            Visor.Text = "";
+        }
+        private void buttonMenos_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(Visor.Text);
+            operacao = "subtracao";
+            Visor.Text = "";
+        }
 
+
+
+        private void buttonMultiplicacao_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(Visor.Text);
+            operacao = "multiplicacao";
+            Visor.Text = "";
+        }
+
+        private void buttonDivisao_Click(object sender, EventArgs e)
+        {
+            valor1 = Convert.ToSingle(Visor.Text);
+            operacao = "divisao";
+            Visor.Text = "";
+        }
+        private void buttonIgual_Click(object sender, EventArgs e)
+        {
+            if (this.operacao == "adicao")
+            {
+                float resultado = valor1 + Convert.ToSingle(Visor.Text);
+                Visor.Text = resultado.ToString();
+            }
+
+            if (this.operacao == "subtracao")
+            {
+                float resultado = valor1 - Convert.ToSingle(Visor.Text);
+                Visor.Text = resultado.ToString();
+            }
+
+            if (this.operacao == "multiplicacao")
+            {
+                float resultado = valor1 * Convert.ToSingle(Visor.Text);
+                Visor.Text = resultado.ToString();
+            }
+
+            if (this.operacao == "divisao")
+            {
+                float resultado = valor1 / Convert.ToSingle(Visor.Text);
+                Visor.Text = resultado.ToString();
+            }
+
+        }
+
+        private void buttonLimpar_Click(object sender, EventArgs e)
+        {
+            Visor.Clear();
+
+        }
+
+        private void buttonOff_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Jogo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void celsiusParaFahrenheitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConversor formularioConversor = new frmConversor();
+            formularioConversor.ShowDialog();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
