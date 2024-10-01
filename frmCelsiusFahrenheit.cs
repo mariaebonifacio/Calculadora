@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class frmConversor : Form
+    public partial class frmCelsiusFahrenheit : Form
     {
-        public frmConversor()
+        public frmCelsiusFahrenheit()
         {
             InitializeComponent();
         }
@@ -31,10 +31,11 @@ namespace Calculadora
             txtFahrenheit.Text = resultado.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtCelsius.Clear();
             txtFahrenheit.Clear();
         }
+
     }
 }

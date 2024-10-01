@@ -144,13 +144,19 @@ namespace Calculadora
 
         private void celsiusParaFahrenheitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmConversor formularioConversor = new frmConversor();
+            frmCelsiusFahrenheit formularioConversor = new frmCelsiusFahrenheit();
             formularioConversor.ShowDialog();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void centímetrosParaPolegadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCentimetrosPolegadas formularioCentimetrosPolegadas = new FrmCentimetrosPolegadas();
+            formularioCentimetrosPolegadas.ShowDialog();
         }
     }
 }

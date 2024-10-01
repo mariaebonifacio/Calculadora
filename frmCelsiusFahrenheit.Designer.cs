@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class frmConversor
+    partial class frmCelsiusFahrenheit
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             btnConverter = new Button();
             label3 = new Label();
             txtFahrenheit = new TextBox();
-            button1 = new Button();
+            btnLimpar = new Button();
             SuspendLayout();
             // 
             // txtCelsius
@@ -88,32 +88,32 @@
             txtFahrenheit.TabIndex = 5;
             txtFahrenheit.TextAlign = HorizontalAlignment.Center;
             // 
-            // button1
+            // btnLimpar
             // 
-            button1.BackColor = Color.IndianRed;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.HighlightText;
-            button1.Location = new Point(34, 117);
-            button1.Name = "button1";
-            button1.Size = new Size(86, 25);
-            button1.TabIndex = 6;
-            button1.Text = "Limpar";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnLimpar.BackColor = Color.IndianRed;
+            btnLimpar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLimpar.ForeColor = SystemColors.HighlightText;
+            btnLimpar.Location = new Point(34, 117);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(86, 25);
+            btnLimpar.TabIndex = 6;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
             // 
-            // frmConversor
+            // frmCelsiusFahrenheit
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Brown;
             ClientSize = new Size(389, 294);
-            Controls.Add(button1);
+            Controls.Add(btnLimpar);
             Controls.Add(txtFahrenheit);
             Controls.Add(label3);
             Controls.Add(btnConverter);
             Controls.Add(label1);
             Controls.Add(txtCelsius);
-            Name = "frmConversor";
+            Name = "frmCelsiusFahrenheit";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmConversor";
             FormClosed += frmConversor_FormClosed;
@@ -128,6 +128,6 @@
         private Button btnConverter;
         private Label label3;
         private TextBox txtFahrenheit;
-        private Button button1;
+        private Button btnLimpar;
     }
 }

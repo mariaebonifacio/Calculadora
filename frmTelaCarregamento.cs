@@ -1,8 +1,8 @@
 namespace Calculadora
 {
-    public partial class Calculadora : Form
+    public partial class frmTelaCarregamento : Form
     {
-        public Calculadora()
+        public frmTelaCarregamento()
         {
             InitializeComponent();
         }

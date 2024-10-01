@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Calculadora
+    partial class frmTelaCarregamento
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaCarregamento));
             pictureBox1 = new PictureBox();
             progressBar1 = new ProgressBar();
             label1 = new Label();

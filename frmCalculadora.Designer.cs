@@ -52,6 +52,7 @@
             sairToolStripMenuItem = new ToolStripMenuItem();
             conversorToolStripMenuItem = new ToolStripMenuItem();
             celsiusParaFahrenheitToolStripMenuItem = new ToolStripMenuItem();
+            centímetrosParaPolegadaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -315,13 +316,13 @@
             // sairToolStripMenuItem
             // 
             sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(180, 22);
+            sairToolStripMenuItem.Size = new Size(93, 22);
             sairToolStripMenuItem.Text = "Sair";
             sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
             // conversorToolStripMenuItem
             // 
-            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { celsiusParaFahrenheitToolStripMenuItem });
+            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { celsiusParaFahrenheitToolStripMenuItem, centímetrosParaPolegadaToolStripMenuItem });
             conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
             conversorToolStripMenuItem.Size = new Size(73, 20);
             conversorToolStripMenuItem.Text = "Conversor";
@@ -329,9 +330,16 @@
             // celsiusParaFahrenheitToolStripMenuItem
             // 
             celsiusParaFahrenheitToolStripMenuItem.Name = "celsiusParaFahrenheitToolStripMenuItem";
-            celsiusParaFahrenheitToolStripMenuItem.Size = new Size(196, 22);
+            celsiusParaFahrenheitToolStripMenuItem.Size = new Size(217, 22);
             celsiusParaFahrenheitToolStripMenuItem.Text = "Celsius para Fahrenheit";
             celsiusParaFahrenheitToolStripMenuItem.Click += celsiusParaFahrenheitToolStripMenuItem_Click;
+            // 
+            // centímetrosParaPolegadaToolStripMenuItem
+            // 
+            centímetrosParaPolegadaToolStripMenuItem.Name = "centímetrosParaPolegadaToolStripMenuItem";
+            centímetrosParaPolegadaToolStripMenuItem.Size = new Size(217, 22);
+            centímetrosParaPolegadaToolStripMenuItem.Text = "Centímetros para polegada";
+            centímetrosParaPolegadaToolStripMenuItem.Click += centímetrosParaPolegadaToolStripMenuItem_Click;
             // 
             // Jogo
             // 
@@ -363,7 +371,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Jogo";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Jogo";
+            Text = "Calculadora";
             FormClosed += Jogo_FormClosed;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -396,5 +404,6 @@
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem conversorToolStripMenuItem;
         private ToolStripMenuItem celsiusParaFahrenheitToolStripMenuItem;
+        private ToolStripMenuItem centímetrosParaPolegadaToolStripMenuItem;
     }
 }
